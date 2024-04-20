@@ -15,10 +15,12 @@ document.querySelector('.increment').addEventListener('click',()=>{
 decrement.addEventListener('click',()=>{
     --result;
     if(result < 0){
-        clear.style.display='none';
         error.style.display='block';
         decrement.disabled=true;
         result=0;
+    }
+    if(result ==0){
+        clear.style.display='none';
     }
     count.textContent=result;
 })
