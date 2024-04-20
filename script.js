@@ -24,4 +24,5 @@ clear.addEventListener('click',()=>{
     result=0;
     count.textContent=result;
     error.style.display='none';
+    decrement.disabled=false;
 })
