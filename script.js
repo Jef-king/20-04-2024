@@ -7,7 +7,6 @@ document.querySelector('.increment').addEventListener('click',()=>{
     ++result;
     count.textContent=result;
     if(result == 1){
-        clear.style.display='inline-block';
         error.style.display='none';
         decrement.disabled=false;
     }
@@ -19,14 +18,10 @@ decrement.addEventListener('click',()=>{
         decrement.disabled=true;
         result=0;
     }
-    if(result ==0){
-        clear.style.display='none';
-    }
     count.textContent=result;
 })
 clear.addEventListener('click',()=>{
     result=0;
     count.textContent=result;
-    clear.style.display='none';
-
+    error.style.display='none';
 })
